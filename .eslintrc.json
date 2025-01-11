@@ -3,6 +3,8 @@
   "rules": {
     "react/no-unescaped-entities":"off",
     "@typescript-eslint/quotes": "off",
+    "import/no-anonymous-default-export": "off",
+    "react/display-name": "off",
     "quotes": [0],
     "avoidEscape": 0,
     "allowTemplateLiterals": 0,

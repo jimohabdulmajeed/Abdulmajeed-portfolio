@@ -4,21 +4,6 @@ import * as SheetPrimitive from "@radix-ui/react-dialog"
 import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils"
 
-import * as Dialog from "@radix-ui/react-dialog";
-
-export default () => (
-	<Dialog.Root>
-		<Dialog.Trigger />
-		<Dialog.Portal>
-			<Dialog.Overlay />
-			<Dialog.Content>
-				<Dialog.Title />
-				<Dialog.Description />
-				<Dialog.Close />
-			</Dialog.Content>
-		</Dialog.Portal>
-	</Dialog.Root>
-);
 
 
 import { IoMdClose} from "react-icons/io";
@@ -111,7 +96,7 @@ const SheetDescription = React.forwardRef(({ className, ...props }, ref) => (
 ))
 SheetDescription.displayName = SheetPrimitive.Description.displayName
 
-export {
+export default {
   Sheet,
   SheetPortal,
   SheetOverlay,
@@ -122,4 +107,4 @@ export {
   SheetFooter,
   SheetTitle,
   SheetDescription,
-}
+};
