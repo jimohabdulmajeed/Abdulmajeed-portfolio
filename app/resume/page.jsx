@@ -15,7 +15,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. voluptatem magni, amet ex est ipsum sapiente odio! Nemo ullam blanditiis nulla possimus repellat.",
+    "Frontend developer with 4 years plus of experience. Fluent in JavaScript, React, HTML, CSS and Next Js. Also have knowledge on Word Press, and have worked on 5+ major web design projects. Seeking to leverage experience with multiple online courses of web development to improve my skills and to be productive.",
   info: [
     {
       fieldName: " Name",
@@ -57,7 +57,7 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem magni, amet ex est ipsum sapiente odio! Nemo ullam blanditiis nulla possimus repellat.",
+    "Frontend developer with 4 years plus of experience.",
   items: [
     {
       company: "Thermolinks concepts limited",
@@ -87,7 +87,7 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My Education",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem magni, amet ex est ipsum sapiente odio! Nemo ullam blanditiis nulla possimus repellat.",
+    "Computer Science Graduate from University Of Abuja.",
   items: [
     {
       institution: "Online Course Platform",
@@ -131,7 +131,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem magni, amet ex est ipsum sapiente odio! Nemo ullam blanditiis nulla possimus repellat.",
+    "Fluent in JavaScript, React, HTML, CSS and Next Js. Also have knowledge on Word Press and Figma.",
   skillList: [
     {
       icon: <FaHtml5 />,

@@ -7,26 +7,26 @@ const services = [
   {
     num: '01',
     title: 'Web Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    href: ""
+    description: 'Passionate web developer with expertise in creating responsive and user-friendly websites. With modern web technologies, including HTML, CSS, JavaScript, React, and WordPress.',
+    href: "#projects"
   },
   {
     num: '02',
     title: 'UI/UX Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    href: ""
+    description: 'Passionate about designing visually appealing and user-friendly interfaces.',
+    href: "#projects"
   },
   {
     num: '03',
     title: 'Graphics Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    href: ""
+    description: 'Focused on delivering high-quality visuals that enhance brand identity.',
+    href: "#projects"
   },
   {
     num: '04',
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    href: ""
+    title: 'Project Managment',
+    description: 'Skilled in project planning, team coordination, and agile methodologies.',
+    href: "#projects"
   },
 
   ];
