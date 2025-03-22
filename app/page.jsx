@@ -24,12 +24,15 @@ const Home = () => {
             {/* btn and social buttons */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
+                asChild
                 variant="outline" 
                 size="lg" 
-                className="uppercase flex item-center gap-2"
+                className="uppercase flex item-center gap-2 px-6"
               >
+                <a  href="/CV__.pdf" download className="flex items-center gap-2" >
                 <span className="">Download CV</span>
                 <FiDownload className="text-xl" />
+                </a>
               </Button>
               {/* social buttons */}
               <div className="mb-8 xl:mb-0">
@@ -38,7 +41,7 @@ const Home = () => {
                 iconStyles="w-9 h-9 border border-accent rounded-full flex 
                  justify-center items-center text-accent text-base hover:bg-accent
                  hover:text-primary hover:transition-all duration-500"
-              
+                 
                  />
               </div>
             </div>
