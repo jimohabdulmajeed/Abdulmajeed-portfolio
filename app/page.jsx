@@ -1,5 +1,7 @@
+"use client" 
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+import { Typewriter } from 'react-simple-typewriter';
 
 //components
 import Socials from "@/components/Socials";
@@ -17,9 +19,17 @@ const Home = () => {
               Hello I'm<br /><span className="text-accent">Abdulmajeed<br /> Okaka Jimoh</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-            I am a dedicated web developer with a strong foundation in HTML, CSS and JavaScript,
-             specializing in front-end development with React and Next.js.
-             I excel in creating seamless user experiences and collaborating with design teams.
+              <Typewriter
+                words={[
+                  "I am a dedicated web developer with a strong foundation in HTML, CSS and JavaScript, specializing in front-end development with React and Next.js. I excel in creating seamless user experiences and collaborating with design teams."
+                ]}
+                loop={0} 
+                cursor
+                cursorStyle="|"
+                typeSpeed={30}
+                deleteSpeed={20}
+                delaySpeed={5000}
+              />
             </p>
             {/* btn and social buttons */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
