@@ -34,6 +34,7 @@ const works=[
     live: "https://abujaguardspolo.com/",
     github: "",
   },
+  
   {
     num: '03',
     category: 'frontend',
@@ -41,6 +42,40 @@ const works=[
     description: 'Aisjeed Technologies Website.',
     stack: [{ name: "WordPress" }, ],
     image: '/assets/work/thumb3.png',
+    live: "aisjeed.ng",
+    github: "",
+  },
+
+  {
+    num: '04',
+    category: 'Full-Stack',
+    title: 'Project 4',
+    description: 'Project Seed Portal.',
+    stack: [{ name: "Nextjs" }, { name: "TailwindCss" }, { name: "Javascript" }, { name: "Nodejs" }, { name: "MongoDB" }, 
+      { name: "Expressjs" }],
+    image: '/assets/work/thumb4.png',
+    live: "",
+    github: "",
+  },
+
+  {
+    num: '05',
+    category: 'Full-Stack',
+    title: 'Project 5',
+    description: 'Employee Management System.',
+    stack: [{ name: "Nextjs" }, { name: "TailwindCss" }, { name: "Javascript" }, { name: "Nodejs" }, { name: "MongoDB" }],
+    image: '/assets/work/thumb5.png',
+    live: "",
+    github: "",
+  },
+
+  {
+    num: '06',
+    category: 'frontend',
+    title: 'Project 6',
+    description: 'Company Website.',
+    stack: [{ name: "WordPress" }, ],
+    image: '/assets/work/thumb6.png',
     live: "",
     github: "",
   },
@@ -73,7 +108,7 @@ const Projects = () => {
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               {/* outline num */}
-              <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+              <div className="font-extrabold leading-none text-transparent text-8xl text-outline">
                 {project.num}
               </div>
               {/* project category */}
@@ -103,7 +138,7 @@ const Projects = () => {
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
                     <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                      <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                      <BsArrowUpRight className="text-3xl text-white group-hover:text-accent" />
                     </TooltipTrigger>
                     <TooltipContent>
                       <p>Live project</p>
@@ -116,7 +151,7 @@ const Projects = () => {
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
                     <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                      <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                      <BsGithub className="text-3xl text-white group-hover:text-accent" />
                     </TooltipTrigger>
                     <TooltipContent>
                       <p>Github repository</p>
@@ -139,7 +174,7 @@ const Projects = () => {
                 <SwiperSlide key={index} className="w-full">
                   <div className="h-[460px] relative group flex justify-center item-center bg-pink-50/20">
                   {/* overlay */}
-                  <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10" ></div>
+                  <div className="absolute top-0 bottom-0 z-10 w-full h-full bg-black/10" ></div>
                   {/* image */}
                   <Image
                     src={project.image}
