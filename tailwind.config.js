@@ -28,13 +28,28 @@ module.exports = {
 			accent:{
 				DEFAULT: "#00ff99",
 				hover: "#00e187",
-			}
+			},
+			card: "#232329",
+			border: "rgba(255, 255, 255, 0.08)",
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+  		boxShadow: {
+  			card: "0 8px 30px rgba(0, 0, 0, 0.25)",
+  			glow: "0 0 0 1px rgba(0, 255, 153, 0.15), 0 8px 30px rgba(0, 255, 153, 0.08)",
+  		},
+  		keyframes: {
+  			"fade-up": {
+  				"0%": { opacity: "0", transform: "translateY(12px)" },
+  				"100%": { opacity: "1", transform: "translateY(0)" },
+  			},
+  		},
+  		animation: {
+  			"fade-up": "fade-up 0.6s ease-out both",
+  		},
   	}
   },
   plugins: [require("tailwindcss-animate")],

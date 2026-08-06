@@ -17,8 +17,8 @@ const works=[
   {
     num: '01',
     category: 'frontend',
-    title: 'Project 1',
-    description: 'Portfolio website.',
+    title: 'Personal Portfolio Website',
+    description: 'A personal portfolio built to showcase my work and skills as a frontend developer.',
     stack: [{ name: "Nextjs" }, { name: "TailwindCss" }, { name: "Javascript" }],
     image: '/assets/work/thumb1.png',
     live: "https://abdulmajeed-portfolio.vercel.app/",
@@ -27,31 +27,31 @@ const works=[
   {
     num: '02',
     category: 'Front-end',
-    title: 'Project 2',
-    description: 'Abuja gards polo website.',
+    title: 'Abuja Guards Polo Club',
+    description: 'A responsive marketing website for the Abuja Guards Polo Club.',
     stack: [{ name: "react" }, { name: "Tailwind.css" }, { name: "Figma" }],
     image: '/assets/work/thumb2.png',
     live: "https://abujaguardspolo.com/",
     github: "",
   },
-  
+
   {
     num: '03',
     category: 'frontend',
-    title: 'Project 3',
-    description: 'Aisjeed Technologies Website.',
+    title: 'Aisjeed Technologies',
+    description: 'Company website for Aisjeed Technologies, built and managed on WordPress.',
     stack: [{ name: "WordPress" }, ],
     image: '/assets/work/thumb3.png',
-    live: "aisjeed.ng",
+    live: "https://aisjeed.ng",
     github: "",
   },
 
   {
     num: '04',
     category: 'Full-Stack',
-    title: 'Project 4',
-    description: 'Project Seed Portal.',
-    stack: [{ name: "Nextjs" }, { name: "TailwindCss" }, { name: "Javascript" }, { name: "Nodejs" }, { name: "MongoDB" }, 
+    title: 'Project Seed Portal',
+    description: 'A full-stack portal for managing and tracking project seed initiatives.',
+    stack: [{ name: "Nextjs" }, { name: "TailwindCss" }, { name: "Javascript" }, { name: "Nodejs" }, { name: "MongoDB" },
       { name: "Expressjs" }],
     image: '/assets/work/thumb4.png',
     live: "",
@@ -61,8 +61,8 @@ const works=[
   {
     num: '05',
     category: 'Full-Stack',
-    title: 'Project 5',
-    description: 'Employee Management System.',
+    title: 'Employee Management System',
+    description: 'An internal system for managing employee records, roles, and workflows.',
     stack: [{ name: "Nextjs" }, { name: "TailwindCss" }, { name: "Javascript" }, { name: "Nodejs" }, { name: "MongoDB" }],
     image: '/assets/work/thumb5.png',
     live: "",
@@ -72,8 +72,8 @@ const works=[
   {
     num: '06',
     category: 'frontend',
-    title: 'Project 6',
-    description: 'Company Website.',
+    title: 'Company Website',
+    description: 'A brand-focused company website built and managed on WordPress.',
     stack: [{ name: "WordPress" }, ],
     image: '/assets/work/thumb6.png',
     live: "",
@@ -112,53 +112,73 @@ const Projects = () => {
                 {project.num}
               </div>
               {/* project category */}
-              <h2 className="text-[42px] font-bold leading none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+              <span className="text-accent uppercase tracking-[2px] text-sm">{project.category}</span>
+              {/* project title */}
+              <h2 className="text-[32px] xl:text-[42px] font-bold leading-none text-white transition-all duration-500">
+                {project.title}
               </h2>
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
-              <ul className="flex gap-4" >
+              <ul className="flex flex-wrap gap-3" >
                 {project.stack.map((item, index) =>{
                   return (
-                  <li key={index} className="text-xl text-accent" >
+                  <li key={index} className="text-sm text-accent border border-accent/30 rounded-full px-3 py-1" >
                     {item.name}
-                    {/* remove the last comma */}
-                    {index !== project.stack.length - 1 && ","}
                   </li>
                 );
                 })}
               </ul>
               {/* border */}
-              <div className="border border-white/20"></div>
+              <div className="border border-white/10"></div>
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live}>
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
-                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                      <BsArrowUpRight className="text-3xl text-white group-hover:text-accent" />
+                    <TooltipTrigger asChild>
+                      {project.live ? (
+                        <Link
+                          href={project.live}
+                          target="_blank"
+                          className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group hover:bg-white/10 transition-all"
+                        >
+                          <BsArrowUpRight className="text-3xl text-white group-hover:text-accent" />
+                        </Link>
+                      ) : (
+                        <span className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center opacity-30 cursor-not-allowed">
+                          <BsArrowUpRight className="text-3xl text-white" />
+                        </span>
+                      )}
                     </TooltipTrigger>
                     <TooltipContent>
-                      <p>Live project</p>
+                      <p>{project.live ? "Live project" : "Live link not available"}</p>
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>
-                </Link>
                 {/* github project button */}
-                <Link href={project.github}>
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
-                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                      <BsGithub className="text-3xl text-white group-hover:text-accent" />
+                    <TooltipTrigger asChild>
+                      {project.github ? (
+                        <Link
+                          href={project.github}
+                          target="_blank"
+                          className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group hover:bg-white/10 transition-all"
+                        >
+                          <BsGithub className="text-3xl text-white group-hover:text-accent" />
+                        </Link>
+                      ) : (
+                        <span className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center opacity-30 cursor-not-allowed">
+                          <BsGithub className="text-3xl text-white" />
+                        </span>
+                      )}
                     </TooltipTrigger>
                     <TooltipContent>
-                      <p>Github repository</p>
+                      <p>{project.github ? "Github repository" : "Repository not public"}</p>
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>
-                </Link>
               </div>
             </div>
           </div>

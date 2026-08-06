@@ -39,7 +39,7 @@ const about = {
     },
     {
       fieldName: "languages",
-      fieldValue: "English, Pigin",
+      fieldValue: "English, Pidgin",
     },
     {
       fieldName: "Freelance",
@@ -197,7 +197,7 @@ const Resume = () => {
          className="flex flex-col xl:flex-row gap-[60px]"
          >
 
-          <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
+          <TabsList className="card-surface flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-3 p-3">
             <TabsTrigger value="experience">Experience</TabsTrigger >
             <TabsTrigger value="education">Education</TabsTrigger >
             <TabsTrigger value="skills">Skills</TabsTrigger >
@@ -212,12 +212,12 @@ const Resume = () => {
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-2 lg:grid-cols gap-[30px]">
+                  <ul className="grid grid-cols-2 lg:grid-cols-3 gap-[30px]">
                     {experience.items.map((item, index) => {
                       return(
-                        <li 
+                        <li
                           key={index}
-                          className="bg-[#232329] min-h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="card-surface-hover min-h-[184px] py-6 px-10 flex flex-col justify-center items-center lg:items-start gap-1"
 
                         >
                           <span  className="text-accent">{item.duration}</span>
@@ -244,12 +244,12 @@ const Resume = () => {
                 <h3 className="text-4xl font-bold">{education.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 grid-cols-2 lg:grid-cols-3 gap-[30px]">
+                  <ul className="grid grid-cols-2 lg:grid-cols-3 gap-[30px]">
                     {education.items.map((item, index) => {
                       return(
-                        <li 
+                        <li
                           key={index}
-                          className="bg-[#232329] min-h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="card-surface-hover min-h-[184px] py-6 px-10 flex flex-col justify-center items-center lg:items-start gap-1"
 
                         >
                           <span className="text-accent">{item.duration}</span>
@@ -283,7 +283,7 @@ const Resume = () => {
                     return <li key={index}>
                       <TooltipProvider delayDuration={100}>
                         <Tooltip>
-                          <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                          <TooltipTrigger className="card-surface-hover w-full h-[150px] flex justify-center items-center group">
                             <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
                           </TooltipTrigger>
                           <TooltipContent>

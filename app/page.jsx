@@ -14,11 +14,15 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Web Developer</span>
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full border border-accent/30 bg-accent/5 text-accent text-sm">
+              <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+              Available for freelance work
+            </div>
+            <span className="text-xl block text-white/80">Web Developer</span>
             <h1 className="h1 mb-6">
               Hello I'm<br /><span className="text-accent">Abdulmajeed<br /> Okaka Jimoh</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
+            <p className="max-w-[500px] mb-9 text-white/80 mx-auto xl:mx-0">
               <Typewriter
                 words={[
                   "I am a dedicated web developer with a strong foundation in HTML, CSS and JavaScript, specializing in front-end development with React and Next.js. I excel in creating seamless user experiences and collaborating with design teams."

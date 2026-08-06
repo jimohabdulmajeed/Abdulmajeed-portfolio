@@ -27,26 +27,26 @@ const links = [
 ];
 
 const Nav = () => {
-  const pathname = usePathname("nav");
-  console.log(pathname);
+  const pathname = usePathname();
   return(
-    <nav className="flex gap-8">
+    <nav className="flex gap-2">
       {links.map((link, index ) => {
+        const isActive = link.path === pathname;
         return (
           <Link href={link.path}
            key={index}
            className={`${
-            link.path === pathname && "text-accent border-b-2 border-accent"
-          } capitalize font-medium hover:text-accent transition-all`}
+            isActive ? "text-accent bg-white/5" : "text-white/80 hover:text-accent"
+          } capitalize font-medium px-4 py-2 rounded-full transition-all`}
           >
             {link.name}
             </Link>
         );
-      
+
       })}
     </nav>
-  ); 
-  
+  );
+
 };
 
 export default Nav;

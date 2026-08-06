@@ -4,8 +4,17 @@
 
 
 @layer base{
+  html {
+    scroll-behavior: smooth;
+  }
   body{
     @apply font-primary bg-primary text-white leading-loose;
+  }
+  ::selection {
+    @apply bg-accent text-primary;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-primary rounded-sm;
   }
   .h1{
     @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
@@ -19,9 +28,18 @@
   .text-outline {
     -webkit-text-stroke: 1px #ffffff;
   }
-  
+
   .text-outline-hover {
     -webkit-text-stroke: 1px #00ff99;
+  }
+}
+
+@layer components {
+  .card-surface {
+    @apply bg-card border border-border rounded-2xl transition-all duration-300;
+  }
+  .card-surface-hover {
+    @apply card-surface hover:-translate-y-1 hover:shadow-card hover:border-accent/30;
   }
 }
 
