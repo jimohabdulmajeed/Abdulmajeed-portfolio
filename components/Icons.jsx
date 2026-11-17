@@ -14,7 +14,7 @@ import {
   SiFramer,
 } from "react-icons/si";
 import { FaGithub, FaLinkedinIn, FaXTwitter, FaYoutube } from "react-icons/fa6";
-import { CodeXml, Database, Palette, PenTool, SquareKanban } from "lucide-react";
+import { ChartColumn, CodeXml, Database, Palette, PenTool, ShieldCheck } from "lucide-react";
 
 const tech = {
   react: SiReact,
@@ -44,7 +44,8 @@ const service = {
   code: CodeXml,
   pen: PenTool,
   palette: Palette,
-  kanban: SquareKanban,
+  shield: ShieldCheck,
+  chart: ChartColumn,
 };
 
 const pick = (map) => {
