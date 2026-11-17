@@ -1,0 +1,356 @@
+<!doctype html>
+<!--
+  Source for public/Abdulmajeed_Jimoh_FullStack_Developer_CV.pdf.
+  Edit this file, then print it to PDF (A4, no headers/footers, background graphics on), e.g.:
+    chrome --headless=new --no-pdf-header-footer --print-to-pdf=public/Abdulmajeed_Jimoh_FullStack_Developer_CV.pdf cv/cv.html
+  Sizes are in points to match the original ReportLab layout.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Abdulmajeed Okaka Jimoh - Full-Stack Developer CV</title>
+    <meta name="author" content="Abdulmajeed Okaka Jimoh" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=block" rel="stylesheet" />
+    <style>
+      @page {
+        size: A4;
+        margin: 48pt 46pt 30pt 48.2pt;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: 9.2pt;
+        line-height: 13.4pt;
+        color: #262626;
+        background: #fff;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      b {
+        font-weight: 700;
+        color: #1a1a1a;
+      }
+
+      /* header */
+      .name {
+        font-size: 25pt;
+        line-height: 28pt;
+        font-weight: 700;
+        text-align: center;
+        color: #1a1a1a;
+      }
+      .headline {
+        margin-top: 2.4pt;
+        font-size: 10.2pt;
+        line-height: 14pt;
+        font-weight: 700;
+        text-align: center;
+        color: #1a1a1a;
+      }
+      .contact {
+        font-size: 8.6pt;
+        line-height: 13.4pt;
+        text-align: center;
+        color: #4d4d4d;
+      }
+      .rule {
+        margin: 5.7pt 6pt 0;
+        border-top: 0.8pt solid #262626;
+      }
+      .summary {
+        margin: 4.2pt 6pt 0;
+        font-size: 9.3pt;
+        line-height: 14.2pt;
+        text-align: justify;
+      }
+
+      /* sections */
+      h2 {
+        margin: 8.4pt 6pt 0;
+        padding-bottom: 3pt;
+        border-bottom: 0.8pt solid #262626;
+        font-size: 11.5pt;
+        line-height: 14pt;
+        font-weight: 700;
+        color: #1a1a1a;
+        break-after: avoid;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 166.3pt 166.3pt 1fr;
+        margin-top: 1.3pt;
+        line-height: 14.2pt;
+      }
+
+      /* bullets stay in normal flow (hanging indent, no positioning) so the PDF text layer reads in order for ATS parsers */
+      ul.bullets {
+        list-style: none;
+        margin-top: 1.7pt;
+        padding: 0 6pt 0 8.9pt;
+      }
+      ul.bullets li {
+        padding-left: 10pt;
+        text-indent: -10pt;
+      }
+      ul.bullets li + li {
+        margin-top: 1.2pt;
+      }
+      ul.bullets li::before {
+        content: "\2022";
+        display: inline-block;
+        width: 10pt;
+        text-indent: 0;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 10pt;
+        line-height: 0;
+      }
+      .nowrap {
+        white-space: nowrap;
+      }
+
+      .entry {
+        margin-top: 5.5pt;
+        break-inside: avoid;
+      }
+      .entry-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 12pt;
+        font-size: 9.6pt;
+        line-height: 13.4pt;
+        font-weight: 700;
+        color: #1a1a1a;
+      }
+      .entry-sub {
+        margin: -0.5pt 6pt 0;
+        color: #4d4d4d;
+      }
+      .entry ul.bullets {
+        margin-top: 1.6pt;
+      }
+      .edu .entry {
+        margin-top: 3.3pt;
+      }
+      .edu .entry:first-child {
+        margin-top: 5.5pt;
+      }
+
+      .skills {
+        margin-top: 1.3pt;
+        line-height: 14.2pt;
+      }
+      .plain {
+        margin: 1.3pt 6pt 0;
+      }
+      section {
+        break-inside: avoid-page;
+      }
+      section.flow {
+        break-inside: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="name">ABDULMAJEED OKAKA JIMOH</h1>
+      <p class="headline">FULL-STACK DEVELOPER&nbsp; |&nbsp; NEXT.JS &amp; TYPESCRIPT&nbsp; |&nbsp; MULTI-TENANT SAAS</p>
+      <p class="contact">
+        Abuja, Nigeria (Remote, UTC+1)&nbsp; |&nbsp; <a href="mailto:jimohabdulmajeed9@gmail.com">jimohabdulmajeed9@gmail.com</a>&nbsp; |&nbsp;
+        <a href="tel:+2348167256424">+234 816 725 6424</a>
+      </p>
+      <p class="contact">
+        <a href="https://abdulmajeed-portfolio.vercel.app">abdulmajeed-portfolio.vercel.app</a>&nbsp; |&nbsp;
+        <a href="https://github.com/jimohabdulmajeed">github.com/jimohabdulmajeed</a>
+      </p>
+      <p class="contact">
+        <a href="https://www.linkedin.com/in/abdulmajeed-okaka-jimoh-485327261">linkedin.com/in/abdulmajeed-okaka-jimoh-485327261</a>
+      </p>
+      <div class="rule"></div>
+    </header>
+
+    <p class="summary">
+      Full-Stack Developer with 5 years of experience building web applications with Next.js, TypeScript and PostgreSQL.
+      Software Developer at Thermolinks (previously Frontend Developer) delivering internal management systems, remote
+      contract software developer for Aisjeed Technologies, and independently designs and builds multi-tenant SaaS products
+      for Nigerian businesses, owning everything from database schema and row-level security to authentication, payments,
+      background jobs and deployment. Security-conscious, with hands-on penetration testing of tenant isolation and payment
+      webhooks, and a Nigeria-first product approach: Paystack, Naira pricing and FIRS e-invoicing compliance. Also provides
+      Data Protection Officer (DPO) services under the Nigeria Data Protection Act (NDPA) 2023, and data analysis that turns
+      business data into clear dashboards and reports.
+    </p>
+
+    <section>
+      <h2>AREA OF EXPERTISE</h2>
+      <div class="grid">
+        <span>Next.js 15 (App Router) &amp; React</span>
+        <span>TypeScript</span>
+        <span>PostgreSQL &amp; Prisma ORM</span>
+        <span>Multi-Tenant SaaS Architecture</span>
+        <span>Authentication &amp; Authorisation</span>
+        <span>Payments (Paystack)</span>
+        <span>Server Actions &amp; REST APIs</span>
+        <span>Application Security Testing</span>
+        <span>Cloud Deployment (Vercel)</span>
+        <span>Data Protection (DPO)</span>
+        <span>NDPA 2023 Compliance</span>
+        <span>Data Analysis &amp; Dashboards</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>KEY ACHIEVEMENTS</h2>
+      <ul class="bullets">
+        <li>Designed a shared-schema multi-tenancy pattern using PostgreSQL Row-Level Security and a <span class="nowrap">two-client</span> Prisma setup
+          (admin vs tenant-scoped), reused across multiple SaaS products.</li>
+        <li>Building <b>Bilta</b>, an invoicing and business-document SaaS for Nigerian SMEs with FIRS e-invoicing compliance
+          and a three-layer template engine.</li>
+        <li>Penetration-tested own product for cross-tenant IDOR, unauthorised Server Action calls and Paystack webhook
+          verification.</li>
+        <li>Delivered the frontends of four internal management systems at Thermolinks: Contractor, Employee, Orphan and
+          Safety Report systems.</li>
+        <li>Runs a Value Added Services (VAS) aggregator business, bringing telco and business-operations insight to product
+          work.</li>
+      </ul>
+    </section>
+
+    <section class="flow">
+      <h2>PROFESSIONAL EXPERIENCE</h2>
+
+      <div class="entry">
+        <div class="entry-head"><span>Independent - Full-Stack Developer &amp; SaaS Builder</span><span>Ongoing</span></div>
+        <p class="entry-sub">Abuja (Remote)</p>
+        <ul class="bullets">
+          <li>Build multi-tenant SaaS on Next.js 15 App Router, TypeScript, Prisma and Neon PostgreSQL, with Auth.js v5,
+            Upstash Redis/QStash for caching and background jobs, Vercel Blob storage, Resend email and Sentry monitoring.</li>
+          <li><b>Bilta</b> (active build): invoicing and document platform for Nigerian SMEs supporting multiple document
+            types, FIRS e-invoicing compliance and Paystack billing.</li>
+          <li><b>Contractor Pro Max</b> (in development): multi-tenant construction ERP for Nigerian contractors on the same
+            RLS and two-client Prisma architecture.</li>
+          <li>Integrate Paystack payments with verified webhooks and Nigeria-first defaults: Naira pricing, Verve card
+            priority and +234 phone handling.</li>
+          <li>Build and maintain client websites (zaksfoundation.org, acesnps.com.ng), handling hosting, DNS, SSL and mail
+            delivery.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span>Thermolinks Concepts Limited - Software Developer / Engineer</span><span>Nov 2025 - Present</span>
+        </div>
+        <p class="entry-sub">10 Onitsha Crescent, off Gimbiya Street, Area 11, Abuja</p>
+        <ul class="bullets">
+          <li>Promoted from Frontend Developer in November 2025 into a broader software engineering role.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span>Thermolinks Concepts Limited - Frontend Developer</span><span>2022 - Nov 2025</span>
+        </div>
+        <p class="entry-sub">10 Onitsha Crescent, off Gimbiya Street, Area 11, Abuja</p>
+        <ul class="bullets">
+          <li>Developed the frontends of internal management systems with Next.js, TypeScript and Tailwind CSS, integrated
+            with backend REST APIs.</li>
+          <li>Built the <b>Contractor Management</b>, <b>Employee Management</b>, <b>Orphan Management</b> and
+            <b>Safety Report</b> systems, covering onboarding, HR records, charitable data management, incident reporting
+            and compliance tracking.</li>
+          <li>Maintained code quality, component reusability and a consistent design system across all projects.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span>Aisjeed Technologies Limited - Software Developer (Contract)</span><span>Ongoing</span>
+        </div>
+        <p class="entry-sub">Abuja (Remote)</p>
+        <ul class="bullets">
+          <li>Remote contract software developer for an Abuja-based IT consulting firm, alongside full-time employment.
+            Built and deployed the corporate website (aisjeed.ng) and maintain its hosting, DNS, SSL and email delivery.</li>
+          <li>Author detailed product and technical specifications, including a geofenced biometric attendance PWA, an HR
+            SaaS aligned with the Nigeria Tax Act 2025, and a real-estate marketplace.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head"><span>Thermolinks Concepts Limited - Frontend Intern</span><span>2021 - 2022</span></div>
+        <p class="entry-sub">Area 11, Abuja</p>
+        <ul class="bullets">
+          <li>Progressed from fundamental scripting to component-based architecture while mastering core modern web
+            technologies.</li>
+          <li>Built and deployed responsive interfaces with HTML5, CSS3, Flexbox and Grid for seamless cross-device
+            compatibility.</li>
+          <li>Developed a React weather dashboard consuming a third-party REST API, alongside a to-do application and a blog
+            website.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head"><span>FCTA Abuja - SIWES Industrial Trainee</span><span>2019 - 2020</span></div>
+        <p class="entry-sub">Area 3, Garki, Abuja</p>
+        <ul class="bullets">
+          <li>Organised and analysed datasets in Microsoft Excel using formulas and functions to streamline reporting.</li>
+          <li>Authored technical documentation, weekly progress reports and presentations for team leads.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="edu">
+      <h2>EDUCATION</h2>
+      <div class="entry">
+        <div class="entry-head"><span>Bachelor of Science (B.Sc.) Computer Science — Second Class Upper</span></div>
+        <p class="entry-sub">University of Abuja, Abuja, Nigeria.</p>
+      </div>
+      <div class="entry">
+        <div class="entry-head"><span>Frontend Development</span></div>
+        <p class="entry-sub">Northwestern University (Coursera)</p>
+      </div>
+      <div class="entry">
+        <div class="entry-head"><span>Introduction to Cybersecurity &amp; Endpoint Security</span></div>
+        <p class="entry-sub">Cisco Networking Academy</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>TECHNICAL SKILLS</h2>
+      <div class="skills">
+        <p><b>Frontend:</b> React.js, Next.js (App Router), TypeScript, JavaScript (ES6+), Tailwind CSS, HTML5, CSS3</p>
+        <p><b>Backend:</b> Node.js, Next.js Server Actions &amp; Route Handlers, Prisma ORM, REST APIs</p>
+        <p><b>Databases:</b> PostgreSQL (Neon, Row-Level Security), Redis (Upstash)</p>
+        <p><b>Data Analysis:</b> SQL, Microsoft Excel, data cleaning &amp; preparation, dashboards &amp; KPI reporting</p>
+        <p><b>Data Protection (DPO):</b> NDPA 2023 compliance, privacy policies &amp; notices, DPIAs, breach response</p>
+        <p><b>Auth, Payments &amp; Services:</b> Auth.js v5, Paystack, QStash, Resend, Vercel Blob, Sentry</p>
+        <p><b>Tooling &amp; Hosting:</b> Git &amp; GitHub, Vercel, VS Code, Claude Code, WordPress, DirectAdmin</p>
+        <p><b>Design:</b> Figma (design tokens, prototyping)</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>PROFESSIONAL STRENGTHS</h2>
+      <div class="grid">
+        <span>System Design</span>
+        <span>Security Mindset</span>
+        <span>Problem Solving</span>
+        <span>Product Thinking</span>
+        <span>Communication</span>
+        <span>Self-Directed Delivery</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>REFERENCES</h2>
+      <p class="plain">Available on request.</p>
+    </section>
+  </body>
+</html>
